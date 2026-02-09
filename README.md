@@ -316,8 +316,9 @@ My 6.6σ = measuring those cosmic ripples
 
 Why Quantum Gravity Researchers Care
 
-Standard Model: UV & IR separate  
-Quantum Gravity: UV creates IR patterns  
+Standard Model: UV & IR separate.  
+Quantum Gravity: UV creates IR patterns. 
+
 **My data = direct measurement of that mixing**
 
 6. **Technician Mindset**: No PhD needed for cosmology
