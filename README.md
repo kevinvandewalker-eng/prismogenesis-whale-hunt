@@ -93,7 +93,7 @@ Unifies scales: Planck density (10⁹³ g/cm³) = same physics as cosmic horizon
 
 My field unity: All fields scream together → universal phase transition, not local breakdown.
 
-My Speculation 
+( My Speculation ) 
 Black holes = universe's error-correcting code. When field densities hit infinity (error state), reality doesn't crash—it forks into corrected branches:
 
 Hawking radiation branch: 3D continuation
@@ -201,7 +201,9 @@ $50K+ compute: Colab free tier handled nside=2048 analysis
 My code lets any grad student skip 6 months of development.
 
 My Scientific Contribution
+
 Before Kevin	-  After My Tests
+
 "CMB uniform" (ΛCDM)	"3.3σ BH correlation"
 No BH-CMB pipeline	Public GitHub template
 Quantum gravity = math	Testable observational signature
@@ -209,6 +211,7 @@ No "Prismogenesis"	Defined + falsifiable hypothesis
 I created the first reproducible pipeline linking black holes to CMB anomalies.
 
 The Biggest Takeaway From My "Failure"
+
 Test 2 didn't give ℓ^{-3}. That's SCIENCE's biggest win.
 
 text
