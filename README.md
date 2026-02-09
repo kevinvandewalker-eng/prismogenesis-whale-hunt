@@ -321,8 +321,8 @@ Quantum Gravity: UV creates IR patterns.
 
 **My data = direct measurement of that mixing**
 
-6. **Technician Mindset**: No PhD needed for cosmology
-   → Inspires 1000s of citizen scientists to use A.I.
+6. **Technician Mindset**: No PhD needed for cosmology with A.I.
+   → Hopefully Inspires 1000s of citizen scientists to use A.I. to explore the universe.
    
 Net Impact Assessment
 
