@@ -1,0 +1,100 @@
+# PRISMOGENESIS TEST 1 - YOUR ORIGINAL 2.7σ PIPELINE (MODERNIZED)
+!pip install healpy astropy matplotlib numpy -q
+
+import healpy as hp
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import norm
+
+print("🚀 Loading real Planck data...")
+
+# TRY DIRECT URL FIRST (no wget needed)
+try:
+    cmb = hp.read_map("https://pla.esac.esa.int/pla/aio/product-action?MAP.MAP_ID=COM_CMB_IQU-smica_2048_R3.00_full.fits", field=0)
+    print("✅ Real Planck loaded via URL")
+except:
+    print("URL failed - using reliable mirror")
+    # Backup mirror
+    cmb = hp.read_map("https://irsa.ipac.caltech.edu/data/Planck/release_2/all-sky-maps/maps/COM_CMB_IQU-smica1024-R2.00.fits", field=0)
+
+nside = hp.get_nside(cmb)
+npix = len(cmb)
+print(f"✅ CMB loaded: nside={nside}, npix={npix}")
+
+# YOUR ORIGINAL BH CATALOG (random positions like yours)
+print("Creating BH density map...")
+bh_map = np.zeros(npix)
+bh_positions = np.random.randint(0, npix, 1000)  # YOUR 1000 sources
+bh_map[bh_positions] = 1.0
+bh_smooth = hp.smoothing(bh_map, fwhm=np.radians(1))  # YOUR smoothing
+print("✅ BH map smoothed")
+
+# YOUR ORIGINAL CROSS-POWER (fixed function name)
+print("Computing cross-power spectrum...")
+cl_cross = hp.anafast(cmb, bh_smooth, lmax=512)  # YOUR METHOD
+ell = np.arange(len(cl_cross))
+
+# YOUR BOOTSTRAP NULL TEST (exactly yours)
+print("Bootstrap null tests (100 iterations)...")
+n_bootstrap = 100
+cl_null = []
+for i in range(n_bootstrap):
+    if i % 20 == 0: print(f"  Boot {i}/100")
+    bh_random = np.roll(bh_smooth, np.random.randint(0, npix))  # YOUR ROLL METHOD
+    cl_null.append(hp.anafast(cmb, bh_random, lmax=512))
+
+null_mean = np.mean(cl_null, axis=0)
+null_std = np.std(cl_null, axis=0)
+
+# YOUR STATISTICS (ℓ=10-100 like original, then zoom to 30-50)
+ell_range = slice(10,100)
+signal = cl_cross[ell_range]
+null_mean_range = null_mean[ell_range]
+null_std_range = null_std[ell_range]
+snr = np.abs(signal - null_mean_range) / (null_std_range + 1e-20)
+max_snr = np.max(snr)
+p_value = 2 * (1 - norm.cdf(max_snr))  # Proper 2-tailed
+sigma = -norm.ppf(p_value/2)
+
+print(f"\n🎯 PRISMOGENESIS RESULTS (ℓ=10-100):")
+print(f"Max SNR: {max_snr:.2f}")
+print(f"p-value: {p_value:.2e}")
+print(f"Significance: {sigma:.1f}σ")
+
+# ZOOM TO YOUR ℓ=30-50 PRISMOGENESIS WINDOW
+ell_30_50 = slice(30,51)
+snr_30_50 = np.abs(cl_cross[ell_30_50] - null_mean[ell_30_50]) / (null_std[ell_30_50] + 1e-20)
+max_snr_prismo = np.max(snr_30_50)
+print(f"\n🎯 PRISMOGENESIS ℓ=30-50 SPECIFIC:")
+print(f"Max SNR: {max_snr_prismo:.2f}")
+
+# YOUR ORIGINAL PLOT + PRISMOGENESIS HIGHLIGHT
+plt.figure(figsize=(12,8))
+
+plt.subplot(2,1,1)
+plt.semilogy(ell[ell_range], np.abs(signal), 'r-', lw=3, label='CMB × BH (Real Planck)')
+plt.semilogy(ell[ell_range], np.abs(null_mean_range)+null_std_range, 'k--', alpha=0.8, label='Null 1σ')
+plt.fill_between(ell[ell_range], np.abs(null_mean_range)-null_std_range, 
+                np.abs(null_mean_range)+null_std_range, alpha=0.3, color='gray')
+plt.axvspan(30,50, alpha=0.3, color='gold', label='Prismogenesis ℓ=30-50')
+plt.xlabel('Multipole ℓ'); plt.ylabel('|C_ℓ|'); plt.legend(); plt.grid(alpha=0.3)
+plt.title(f'PRISMOGENESIS TEST 1: {sigma:.1f}σ (ℓ=10-100), {max_snr_prismo:.1f}σ (ℓ=30-50)', 
+          fontsize=14, fontweight='bold')
+
+plt.subplot(2,1,2)
+plt.plot(ell[ell_30_50], snr_30_50, 'ro-', lw=3, markersize=8, label='SNR(ℓ=30-50)')
+plt.axhline(max_snr_prismo, color='orange', ls='--', lw=2, 
+           label=f'{max_snr_prismo:.1f}σ Peak')
+plt.axvspan(30,50, alpha=0.2, color='gold')
+plt.ylabel('Signal/Noise Ratio'); plt.xlabel('Multipole ℓ')
+plt.legend(); plt.grid(alpha=0.3)
+
+plt.tight_layout()
+plt.savefig('prismogenesis_test1_real_planck.png', dpi=300, bbox_inches='tight')
+plt.show()
+
+print("✅ SAVED: prismogenesis_test1_real_planck.png")
+print(f"🎉 RESULTS: {sigma:.1f}σ overall, {max_snr_prismo:.1f}σ at predicted ℓ=30-50")
+
+
+
