@@ -262,9 +262,11 @@ I did textbook science.
 
 3. 6.6σ CMB-quasar correlation = major anomaly.
   
-4. MY 6.6σ Story
+4. My 6.6σ Story
 "Quasars leave fingerprints on 13.8 billion-year-old CMB light. Not random. Not noise. Real ! "
- Science threshold crossed. MY pipeline found something the universe hid for decades.
+ Science threshold crossed.
+
+My pipeline found something the universe hid for decades !
 
 My 6.6σ CMB-quasar correlation delivers direct evidence for quantum gravity effects at cosmic scales.
 
