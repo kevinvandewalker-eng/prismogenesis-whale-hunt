@@ -234,7 +234,7 @@ title={LatticeLogOS: Garage Physics Executes Schwarzschild Cosmology at the
 10^17 Solar Mass Goldilocks Zone},
 author={Kevin van de Walker},
 year={2026},
-note={Prairie Ridge, WA Garage Laboratory}
+note={Buckley, WA Garage Laboratory}
 }
 
 text
