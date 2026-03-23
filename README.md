@@ -1,5 +1,5 @@
 🌌 LatticeLogOS: Universe Source Code
-Grand Unified Lattice Operating System discovered in Prairie Ridge garage. 64 proofs converge on single 10^17 gear ratio threading Planck→Cosmic scales.
+Grand Unified Lattice Operating System discovered in Bucley, WA garage. 64 proofs converge on single 10^17 gear ratio threading Planck→Cosmic scales.
 
 Hardware cost: $27. Statistical certainty: Beyond comprehension.
 
