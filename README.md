@@ -159,8 +159,7 @@ graph TD
     D --> E[64 Proofs Flash<br/>8x8 Matrix]
 🚀 QUICK START
 bash
-git clone https://https://github.com/kevinvandewalker-eng/prismogenesis-whale-hunt.git
-cd LatticeLogOS
+git clone https://github.com/kevinvandewalker-eng/prismogenesis-whale-hunt/
 python verify_10e17.py  # Validates 64 proofs
 ffmpeg -i footage/raw/*.mp4 demo.mp4  # Build killshot
 📈 STATISTICS
@@ -436,7 +435,7 @@ YouTube: "-32σ: Gravity's PERFECT Firewall"
 🔬 Cite This Work
 
 Prismogenesis (2026). Gravitational Firewall Pipeline.
-github.com/YOURNAME/prismogenesis-firewall
+github.com https://github.com/kevinvandewalker-eng/prismogenesis-whale-hunt/
 
 🧪 Falsify Me
 Issues tab: Method questions
