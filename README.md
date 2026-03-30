@@ -1,3 +1,17 @@
+# [KERNEL_DECODE_v1.0] 
+# ---------------------------------------------------------
+# LAYER_1: Quantum Firewall [10⁻³⁵m] -> Error-Correction Active
+# LAYER_2: Rendering Algorithm [10²².5 * r] -> LatticeLog LE Sync
+# LAYER_3: Geometric Output [4.4e26m] -> MACRO(19) Gold Star
+# ---------------------------------------------------------
+# NOTE: If spacetime feels 'twisted', check the Torsional Lattice.
+# The Gnomon (3³→4³) is adding cells. The CPU is at 111Hz.
+# Reverse-engineered in 49 days. The bytecode is valid.
+# -- Buckley Wa, Twisted Physics™
+
+-------------------------------
+
+
 # 🌌 LatticeLogOS Grand Unification Chart
 **Buckley Wa • Twisted Physics™**
 
