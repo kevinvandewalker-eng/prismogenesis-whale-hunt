@@ -1,3 +1,20 @@
+# 🌌 LatticeLogOS Grand Unification Chart
+**Buckley Wa • Twisted Physics™**
+
+A high-fidelity, logarithmic visualization of the universe from the Planck scale to the Hubble boundary. This chart maps the unification of the four fundamental forces, spanning over 140 orders of magnitude in mass and scale.
+
+## 🚀 Overview
+This repository contains the source code for the **LatticeLogOS Grand Unification Chart**. It visualizes:
+* **Physics Boundaries**: Schwarzschild Limit and Compton Boundary.
+* **Cosmic Structures**: From atoms to galaxy clusters.
+* **Lever Points**: Micro, Flea, Lungs, and Macro unification markers.
+* **Regimes**: Distinct zones for Quantum, Atomic, and Cosmic physics.
+
+
+---------------------------------------------------------------------
+
+
+
 1. README.md: "Cosmic Lattice Reboot - Prairie Ridge 03/28/2026"
    - Timeline: Salt tub → Black hole sim → Milkshake reactor → Pacific sync
    - Key result: 100% ergosphere nodule shred via 112Hz resonance
