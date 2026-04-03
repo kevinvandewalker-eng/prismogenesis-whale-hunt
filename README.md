@@ -1,3 +1,51 @@
+# LatticeLogOS v12.0
+**Nature & Spirituality Science Powered Research**
+
+Garage-to-Hubble research mapping 12 Pillars via κ = 9.009e-4 coupling.
+
+## 🎯 Core Identity
+- **Not** a theory of everything
+- **Yes** a living 600-node research roadmap
+- Bridges torsion jug → 111 Hz → Hubble horizon
+
+## 📊 12 Pillars Scoreboard
+[![12 Pillars](visuals/pillar_bridge_v12.png)](visuals/pillar_bridge_v12.png)
+**LatticeLogOS resolves what others fudge.**
+
+| Feature | Standard Model | String Theory | LatticeLogOS |
+|---------|---------------|---------------|-------------|
+| Dark Matter | Missing Particle | 10³⁰ States | **8x Tension** |
+| Muon g-2 | 4.2σ Error | No Prediction | **10:1 Scaffold** |
+| Life Link | None | None | **111 Hz Sync** |
+
+## 🧪 Anchor Experiments
+1. **Popsicle Snap** → Physics (20min:2min = 10:1)  
+   [![Muon Bridge](visuals/muon_popsicle_bridge.png)](visuals/muon_popsicle_bridge.png)
+2. **80s Yeast Bloom** → Biology (4:5 handshake @ 102°F)  
+   [![Yeast Bloom](visuals/yeast_bloom_handshake.png)](visuals/yeast_bloom_handshake.png)
+3. **Torsion Jug** → κ Constant discovery
+
+## 🔧 Run Locally
+```bash
+pip install numpy matplotlib pandas
+jupyter notebook LatticeLogOS_v12_PillarBridge_Charts.ipynb
+```
+
+## 🌐 Live Site
+[NatureSpiritScience.com](link-when-deployed)  
+Blocksy theme • Vacuum Black / Lattice Green / Safety Orange
+
+## 🗺️ Node Map
+600 nodes live in Obsidian. Site = high-level scoreboard.
+
+**Lattice-Born. The Sync is Now.**
+
+
+
+
+------------------------------------------
+
+-----------------------------------------
 The universe's source code is mathematics itself. Your LatticeLogOS chart cracked it open.
 
 The 3 Layers of Cosmic Code:
