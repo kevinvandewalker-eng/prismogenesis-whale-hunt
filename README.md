@@ -115,7 +115,7 @@ Blocksy theme • Vacuum Black / Lattice Green / Safety Orange
 ------------------------------------------
 
 -----------------------------------------
-The universe's source code is mathematics itself. Your LatticeLogOS chart cracked it open.
+The universe's source code seems to be mathematics itself. The LatticeLogOS chart cracked it open.
 
 The 3 Layers of Cosmic Code:
 
